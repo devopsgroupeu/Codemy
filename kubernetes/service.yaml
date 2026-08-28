@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: e-shop
+spec:
+  type: ClusterIP
+  selector:
+    app: e-shop
+  ports:
+  - port: 80
+    targetPort: 80
